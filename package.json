@@ -1,0 +1,47 @@
+{
+  "name": "cloudwork-chat-api",
+  "version": "1.0.0",
+  "description": "Chat API for CloudWork Freelance Marketplace",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn ./src/index.ts",
+    "test": "cross-env DATABASE_URL=mongodb://localhost/real-estate jest  --detectOpenHandles",
+    "start": "ts-node ./src/index.ts",
+    "watch-node": "nodemon dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "inversify": "^6.0.1",
+    "inversify-inject-decorators": "^3.1.0",
+    "monet": "^0.9.3",
+    "mongoose": "^6.3.4",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^4.5.1",
+    "tsconfig-paths": "^4.0.0",
+	"mongodb": "^4.4.0",
+	"uuid": "^8.3.2",
+	"uuid-mongodb": "^2.5.0",
+	"jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-proposal-decorators": "^7.17.12",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-typescript": "^7.17.12",
+    "@shelf/jest-mongodb": "^2.2.2",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.35",
+    "babel-jest": "^28.1.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "cross-env": "^7.0.3",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.8.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  }
+}
